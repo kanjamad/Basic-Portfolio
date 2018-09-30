@@ -42,6 +42,8 @@ h2, h3 {
     font-size: 22px;
 }
 
+
+
 /*
 **************************
 HEADER
@@ -251,9 +253,76 @@ input [type=submit]{
     margin-left: 20px; 
     border: 1px solid #cccccc;
     font-size: 15px; 
-    width: 15%;
     cursor: pointer;
   }
 
+/*
+**************************
+Media Queries
+**************************
+*/
+
+@media only screen and (max-width: 980px) {
+    .container {
+        padding: 0 20px;
+        max-width: 768;
+    }
+    #main-container {
+        padding-top:130px;
+    }
+    .main-section {
+        max-width: 420px;
+    }
+    .game {
+        width: 100%;
+    }
+    .por-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .game {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+    .game:nth-child(even) {
+        margin-right: 0;
+    }
+    .game:nth-child(odd) {
+        float:right;
+    }
+    .por-image {
+        width: 50%;
+    }
+}
 
 
+
+@media only screen and (max-width: 640px) {
+    #hihead {
+        position: static;
+        margin-bottom: 20px ;
+    }
+    header.container {
+        padding: 0;
+    }
+    #logo, .game, .por-image {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+    nav a {
+        width: 30%;
+        padding-left:0;
+        margin-left: 0; 
+    }
+
+    #main-container {
+        padding-top: 0;
+    }
+}
